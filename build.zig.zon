@@ -1,0 +1,16 @@
+.{
+    .name = .zig_fastcdr,
+    .fingerprint = 0x6a165a18a023d1e6,
+    .version = "2.3.0",
+    .minimum_zig_version = "0.14.0",
+    .dependencies = .{
+        .fastcdr = .{
+            .url = "https://github.com/eProsima/Fast-CDR/archive/refs/tags/v2.3.0.tar.gz",
+            .hash = "N-V-__8AAOYsbQAEx6tER04250z8-8h0Vn7Uum8Y8emAFthX",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
