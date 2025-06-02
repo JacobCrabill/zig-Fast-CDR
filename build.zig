@@ -18,6 +18,7 @@ pub fn build(b: *std.Build) !void {
             .optimize = optimize,
             .link_libc = true,
             .link_libcpp = true,
+            .pic = true,
         }),
         .linkage = linkage,
     });
