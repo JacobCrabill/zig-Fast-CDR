@@ -56,7 +56,7 @@ pub fn build(b: *std.Build) !void {
             "exceptions/LockedExternalAccessException.cpp",
             "exceptions/NotEnoughMemoryException.cpp",
         },
-        .flags = &.{ "--std=c++17", "-Wall", "-Wextra", "-pedantic", "-Wconversion", "-Wsign-conversion", "-Wdouble-promotion" },
+        .flags = &.{ "--std=c++17", "-fPIC", "-Wall", "-Wextra", "-pedantic", "-Wconversion", "-Wsign-conversion", "-Wdouble-promotion" },
     });
     fastcdr.installHeadersDirectory(upstream.path("include"), "", .{ .include_extensions = &.{ ".h", ".hpp" } });
 
